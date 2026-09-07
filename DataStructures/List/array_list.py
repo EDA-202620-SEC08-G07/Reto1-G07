@@ -15,7 +15,7 @@ def is_present(my_list, element, cmp_function):
         for keypos in range(0, size): 
             info = my_list["elements"][keypos]
             if cmp_function(element, info)==0:
-                keyexist == True
+                keyexist = True
                 break
             if keyexist:
                 return keypos
@@ -38,7 +38,7 @@ def size(my_list):
 def first_element(my_list):
     tamaño = size(my_list)
     
-    if tamaño < 0:
+    if tamaño == 0:
         return None 
     else: 
         return my_list["elements"][0]

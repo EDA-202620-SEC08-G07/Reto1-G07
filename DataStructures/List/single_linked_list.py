@@ -99,7 +99,7 @@ def remove_first(my_list):
         raise Exception("indexError: list index out of range")
     element = my_list["first"]["info"]
     my_list["first"] = my_list["first"]["next"]
-    my_list["size"] -= -1
+    my_list["size"] -= 1
     if my_list["size"] == 0:
         my_list["last"] = None
     return element 

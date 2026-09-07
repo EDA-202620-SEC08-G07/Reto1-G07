@@ -1,4 +1,3 @@
-
 from DataStructures.List import single_linked_list as st
 
 def new_stack():

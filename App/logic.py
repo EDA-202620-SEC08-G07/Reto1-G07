@@ -1,6 +1,8 @@
 import csv
 import time
 csv.field_size_limit(2147483647)
+import DataStructures.List.array_list as al
+import DataStructures.List.single_linked_list as sl
 
 
 def new_logic():
@@ -8,7 +10,24 @@ def new_logic():
     Crea el catalogo para almacenar las estructuras de datos
     """
     #TODO: Llama a las funciónes de creación de las estructuras de datos
-    pass
+    catalog = {'order_id': al.new_list(),
+               'product': al.new_list(),
+               'country': al.new_list(),
+               'channel': al.new_list(),
+               'order_date': al.new_list(),
+               'discount_pct': al.new_list(),
+               'price_per_box': al.new_list(),
+               'marketing_spend': al.new_list(),
+               'boxes_shipped': al.new_list(),
+               'amount': al.new_list()}
+    
+    
+    return catalog
+    
+        
+        
+    
+    
 
 
 # Funciones para la carga de datos
