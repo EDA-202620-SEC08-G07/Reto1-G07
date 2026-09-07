@@ -5,7 +5,7 @@ def new_queue():
     return new 
 
 def enqueue (my_queue, element):
-    st.add_last(my_queue["elements"], element)
+    st.add_last(my_queue, element)
     return my_queue
 
 def dequeue(my_queue):
